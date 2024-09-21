@@ -1,0 +1,63 @@
+body {
+    background-image: linear-gradient(to right,lightblue, lightgreen, aquamarine);
+    margin: 0;
+}
+
+form {
+    margin-left: 25%;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: aquamarine;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+    li a:hover {
+        background-color: gray;
+        color: white;
+    }
+
+#back {
+    color: black;
+    margin-top: 35%;
+    margin-left: 25%;
+    background-color: ghostwhite;
+    position: fixed;
+    overflow: auto;
+    border-block: solid;
+    border-left: solid;
+    border-right: solid;
+}
+
+#next {
+    color: black;
+    margin-top: 36%;
+    margin-left: 70%;
+    background-color: ghostwhite;
+    position: fixed;
+    overflow: auto;
+    border-block: solid;
+    border-left: solid;
+    border-right: solid;
+}
+
+form {
+    width: 70%;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 0px 10px 40px 0px rgba(47,47,47,.1)
+}

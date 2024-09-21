@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="education.css" />
+</head>
+
+<body>
+    <h1>Education</h1>
+
+    <ul>
+        <li>
+            <a target="_parent" href="index.html">Home</a>
+        </li>
+        <li>
+            <a target="_parent" href="Personal Information.html">Personal Information</a>
+        </li>
+        <li>
+            <a target="_parent" href="Education.html">Education</a>
+        </li>
+        <li>
+            <a target="_parent" href="Work Experience.html">Work Experience</a>
+        </li>
+        <li>
+            <a target="_parent" href="Skills.html">Skills</a>
+        </li>
+        <li>
+            <a target="_parent" href="Projects.html">Projects</a>
+        </li>
+        <li>
+            <a target="_parent" href="Contact Form.html">Contact Form</a>
+        </li>
+    </ul>
+    <form id="form-education" action="php/education.php" method="post" >
+        <div class="input-educaction">
+            <label for="qualificationLevel">Qualification level:</label>
+            <input type="text" name="qualificationLevel" />
+            <br />
+            <label for="qualificationName">Qualification Name:</label>
+            <input type="text" name="qualificationName" />
+            <br />
+            <label for="school">School:</label>
+            <input type="text" name="school" />
+            <br />
+            <label for="city">City/Town</label>
+            <input type="text" name="city" />
+            <br />
+            <label for="start">Start Date:</label>
+            <input type="date" name="start" />
+            <br />
+            <label for="end">End Date:</label>
+            <input type="date" name="end" />
+            <br />
+            <label for="educationDescription">Description:</label>
+            <br />
+            <textarea name="educationDescription" cols="30" rows="10"></textarea>
+            <br />
+        </div>
+        <br />
+        <input type="reset" />
+        <input type="submit" name="submit" id="submit" />
+        
+    </form>
+    <button type="button" id="add" onclick="addField()">Add Field</button>
+    
+    <br />
+    <script>
+        let fieldCount = 1;
+
+        function addField() {
+            fieldCount++;
+            const container = document.getElementById('form-education');
+            const newField = document.createElement('div');
+            newField.className = 'input-eductaion';
+            newField.innerHTML = `
+                   <br />
+                    <label for="qualificationLevel">Qualification level:</label>
+                    <input type="text" name="qualificationLevel${fieldCount}" />
+                    <br />
+                    <label for="qualificationName">Qualification Name:</label>
+                    <input type="text" name="qualificationName${fieldCount}" />
+                    <br />
+                    <label for="school">School:</label>
+                    <input type="text" name="school${fieldCount}" />
+                    <br />
+                    <label for="city">City/Town</label>
+                    <input type="text" name="city${fieldCount}" />
+                    <br />
+                    <label for="start">Start Date:</label>
+                    <input type="date" name="start${fieldCount}" />
+                    <br />
+                    <label for="end">End Date:</label>
+                    <input type="date" name="end${fieldCount}" />
+                    <br />
+                    <label for="education description">Description:</label>
+                    <br />
+                    <textarea name="education description${fieldCount}" cols="30" rows="10"></textarea>
+                     <br />
+                    <input type="reset" />
+                    <input type="submit" name="submit" id="submit" />
+                    <br />
+                    <button type="button" id="remove" onclick="removeField(this)">Remove</button>
+
+                `;
+            container.appendChild(newField);
+        }
+
+        function removeField(button) {
+            const container = document.getElementById('form-education');
+            container.removeChild(button.parentElement);
+        }
+    </script>
+
+    <br />
+    <br />
+    <footer>
+        <a id="back" href="Personal Information.html">Back</a>
+        <a id="next" href="Work Experience.html">Next</a>
+    </footer>
+
+</body>
+</html>

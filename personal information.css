@@ -1,0 +1,59 @@
+body {
+    background-image: linear-gradient(to right,lightblue, lightgreen, aquamarine);
+    margin: 0;
+}
+
+form {
+    margin-left: 25%;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: aquamarine;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+    li a:hover {
+        background-color: gray;
+        color: white;
+    }
+form {
+    margin-left: 25%;
+    font-size: 20px;
+}
+#back {
+    color: black;
+    margin-top: 20%;
+    margin-left: 25%;
+    background-color: ghostwhite;
+    position: fixed;
+    overflow: auto;
+    border-block: solid;
+    border-left: solid;
+    border-right: solid;
+}
+
+#next {
+    color: black;
+    margin-top: 20%;
+    margin-left: 95%;
+    background-color: ghostwhite;
+    position: fixed;
+    overflow: auto;
+    border-block: solid;
+    border-left: solid;
+    border-right: solid;
+}

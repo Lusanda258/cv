@@ -1,0 +1,35 @@
+body {
+   background-color: lightgrey;
+   margin: 0;
+}
+
+
+#introduction {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    margin-left: 10%;
+    height: 100%;
+    list-style-type: none;
+    width: 25%;
+    position: fixed;
+    overflow: auto;
+    color: black;
+}
+
+#start {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    margin-left: 35%;
+    padding: 0;
+    position: fixed;
+    overflow: auto;
+    color: whitesmoke;
+}
+    #start:hover {
+        background-color: transparent;
+        color:aqua;
+    }
+    h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}

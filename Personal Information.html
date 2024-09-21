@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Personal Information</title>
+    <link rel="stylesheet" href="personal information.css" />
+</head>
+
+<body>
+    <h1>Personal Information</h1>
+
+    <ul>
+        <li>
+            <a target="_parent" href="index.html">Home</a>
+        </li>
+        <li>
+            <a target="_parent" href="Personal Information.html">Personal Information</a>
+        </li>
+        <li>
+            <a target="_parent" href="Education.html">Education</a>
+        </li>
+        <li>
+            <a target="_parent" href="Work Experience.html">Work Experience</a>
+        </li>
+        <li>
+            <a target="_parent" href="Skills.html">Skills</a>
+        </li>
+        <li>
+            <a target="_parent" href="Projects.html">Projects</a>
+        </li>
+        <li>
+            <a target="_parent" href="Contact Form.html">Contact Form</a>
+        </li>
+    </ul>
+
+    <form action="php/personal information.php" method="post" >
+        <label for="fname">Fullame(s): </label>
+        <input type="text"  name="fname" placeholder="Fullname(s) as indicated in ID" required />
+        <br />
+        <label for="lname">Surname: </label>
+        <input type="text"  name="lname" placeholder="Surname as indicated in ID" required />
+        <br />
+        <label for="DOB">Date of birth:</label>
+        <input type="date"  name="DOB" required>
+        <br />
+
+        <label for="nationality">Nationality:</label>
+        <input type="text" name="nationality" placeholder="e.g South Africa" required />
+        <br />
+        <label for="IDnumber">ID number:</label>
+        <input type="tel" name="IDnumber" placeholder="e.g 123456789...." min="13" maxlength="13" required />
+        <br />
+        <div>
+            <label>Gender: </label>
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="other">Other
+        </div>
+        <br />
+        <div>
+            <label>Marital Status: </label>
+            <input type="radio" name="maritalStatus" value="single">Single
+            <input type="radio" name="maritalStatus" value="married">Married
+        </div>
+        <br />
+        
+            <label for="address">Address:</label>
+            <input type="text" name="address"  required />
+            <br />
+            <label for="city/town">City/Town:</label>
+            <input type="text" name="city/town"  required />
+            <br />
+            <label for="zipcode">Zipcode:</label>
+            <input type="text" name="zipcode"  maxlength="4" required />
+            <br />
+            <br />
+            <input type="reset">
+            <input type="submit" name="submit" id="submit" />
+    </form>
+
+    <footer>
+        <a id="back" href="index.html">Back</a>
+        <a id="next" href="Education.html">Next</a>
+    </footer>
+
+</body>
+</html>
